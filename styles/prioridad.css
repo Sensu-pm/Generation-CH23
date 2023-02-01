@@ -1,0 +1,15 @@
+#dato0{
+    color: bisque;
+    font-size: 30px;
+}
+.pato{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: right;
+    background-color: darkblue;
+    
+    color: aliceblue;
+}
+div{
+    height: 400px;
+    width: 400px;
+}

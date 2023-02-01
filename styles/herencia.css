@@ -1,0 +1,7 @@
+main{
+    font-size: 30px;
+}
+/*Como es en cascada, puede tomarse que el ultimo que aplica es el de titulo y si cambia aunque sea parte de main. Otro modo es porque el identificador es de mayor especificidad.*/
+#dato{
+    color: aqua;
+}
