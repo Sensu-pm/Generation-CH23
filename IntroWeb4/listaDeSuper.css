@@ -1,0 +1,9 @@
+h1{
+    background-color: blueviolet;
+    
+}
+th{
+   border: solid bisque;
+   mask-border-width: 5px;
+
+}
