@@ -1,0 +1,34 @@
+#Viajeros{
+    background-color: steelblue;
+}
+#resaltadoContacto{
+    background-color: bisque;
+    color: red;
+}
+#viajeros{
+    background-color: darksalmon;
+}
+#Reservar{
+    background-color: green;
+    color: white;
+    border-radius: 3px;
+}
+#Contacto{
+    background-color: darksalmon;
+}
+#salida{
+    background-color: darksalmon;
+}
+#acomodo{
+    background-color: darksalmon;
+}
+#intro{
+    background-color:khaki;
+}
+#islandia{
+    background-color: aquamarine;
+}
+#japon{
+    color:white;
+    background-color: hotpink;
+}
