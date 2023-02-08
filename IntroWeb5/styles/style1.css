@@ -7,7 +7,9 @@ body{
 }
 /*Header*/
 h1{
-    text-transform: uppercase;   
+    text-transform: uppercase; /*La propiedad CSS text-transform especifica el cambio entre mayúsculas y minúsculas del texto de un elemento. Puede ser usada para que un texto aparezca completamente en mayúsculas, en minúsculas, o con la primera letra de cada palabra en mayúscula.
+
+    La propiedad text-transform toma en cuenta las reglas específicas del idioma*/
 }
 h1 span{
     color: #f0563d;
@@ -50,5 +52,97 @@ h1 span{
     color: #ffffff;
     font-size: 10px;
     text-decoration: none;
+    display: block;/*La propiedad CSS display especifica si un elemento es tratado como block or inline element y el diseño usado por sus hijos, como flow layout(Diseño de Flujo), grid(Cuadricula) o flex(Flexible).*/
+    padding: 5px;
+}
+
+/*La propiedad position de CSS especifica cómo un elemento es posicionado en el documento. Las propiedades top, right, bottom, y left determinan la ubicación final de los elementos posicionados.*/
+.menu ul li ul{
+    position: absolute;/*La propiedad position de CSS especifica cómo un elemento es posicionado en el documento. Las propiedades top, right, bottom, y left determinan la ubicación final de los elementos posicionados.*/
+    top: 25px;
+    left: 0%;
+    list-style-type: none;/*El tipo de estilo de lista especifica la apariencia del listado.
+
+    valor inicial: disco/punto
+    Se aplica a: elementos con 'display: list-item'
+    valor heredado: Sí
+    Porcentajes: n/a
+    Medio: visual
+    valor calculado: según se especificó */    
+    display: none;
+}
+.menu ul li:hover ul{  /*La pseudo-clase :hover de CSS coincide cuando el usuario interactúa con un elemento con un dispositivo señalador, pero no necesariamente lo activa. Generalmente se activa cuando el usuario se desplaza sobre un elemento con el cursor (puntero del mouse).*/
     display: block;
 }
+
+.menu ul li ul li{
+    display: block;
+    width: 60px;
+    height: 20px; /*La propieda CSS heigth especifica la altura de un elemento. Por defecto, la propiedad  define la altura del area del conenido. sin embargo si box-sizing esta configurado como border-box, determina la altura del area del borde.*/
+    margin: 0;
+    text-align: left;
+    font-size: 14px;
+}
+/*Fin de header*/
+
+h2{
+    color: #f0563d;
+    text-transform: uppercase;
+}
+h2::before{
+    content: "//";
+}
+.clearfix:before{
+    display: table;
+    line-height: 1;
+    content: "";
+}
+.pull-left{
+    float: left;
+}
+.row{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.col-60{
+    width: 60%;
+}
+.col-10{
+    width: 10%;
+}
+
+.containerflex{
+    display: flex;
+}
+.education ul{
+    list-style: none;
+    margin:0;
+    padding: 0; 
+}
+    .education .year {
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+    
+    .education .description {
+        background: #EEEEEE;
+        border-bottom: 1px solid #DDDDDD;
+        padding: 10px;
+        margin-bottom: 10px;
+        position: relative;
+        box-sizing: border-box; 
+    }
+
+    .education .description h3, .education .description p{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .education .description p::after {
+        content: "";
+        position: absolute;
+        border: 8px solid transparent ;
+        border-right: 8px solid #EEEEEE ;
+        top: 5px;
+        left: -16px;
+    }
+  
