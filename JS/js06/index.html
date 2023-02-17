@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <h1>Calculadora DOM</h1>
+    <h1 id="h1">Calculadora DOM</h1>
 
     <input type="number" id="input1" placeholder="Ingresa tu primer numero">
     <input type="number" id="input2" placeholder="Ingresa tu segundo numero">
@@ -19,10 +19,11 @@
     <br>
 
 <!-- Aqui creamos botones para las operaciones-->
-    <button id="botonSuma">Suma</button>
-    <button id="botonResta">Resta</button>
-    <button id="botonMultiplicacion">Multiplicación</button>
-    <button id="botonDivision">División</button>
+    <button onmouseover="cambiarColor('blue')" id="botonSuma" class="botones">Suma</button>
+
+    <button onmouseover="cambiarColor('red')" id="botonResta" class="botones">Resta</button>
+    <button onmouseover="cambiarColor('green')" id="botonMultiplicacion" class="botones">Multiplicación</button>
+    <button onmouseover="cambiarColor('violet')" id="botonDivision" class="botones">División</button>
 
 <!-- Aqui va el resultado-->
 <p id="resultado">Aqui va el resultado</p>
