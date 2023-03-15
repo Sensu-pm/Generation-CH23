@@ -93,4 +93,11 @@ class CalculadoraTest {
 	private void validandoRestaNegativa() {
 		assertEquals(-10, ct.Restar(7, 26));
 }
+	@Test
+	private void validandoDivision() {
+		assertEquals(2, ct..division);
+
+	}
+	
+	
 }
